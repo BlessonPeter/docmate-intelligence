@@ -9,10 +9,10 @@ code . [for openning the vscode in the instance]
 
 git clone [url]
 
-git oppertions
+#### git opertions
 
 git add .
 
 git commit -m  "write your message "
 
-git push
+git push 
