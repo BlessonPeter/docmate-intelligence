@@ -1,2 +1,13 @@
 docenv
 .env
+document_portal.egg-info
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+env/
+venv/
+*.egg-info/
+*.egg
+*.log
