@@ -1,0 +1,6 @@
+faiss_db:
+   collection_name: "document_portal"
+
+Embedding:
+   model_name: "all-MiniLM-L6-v2"
+   
