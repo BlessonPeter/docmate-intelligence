@@ -55,17 +55,17 @@ Deployed the containerized AI application on AWS ECS Fargate, integrating Amazon
 
 “giving life to documents so users can communicate with them instead of manually searching through topics”—is excellent as a project narrative,
 
-## Project 2 — Final Resume Version
+ Project 2 — Final Resume Version
 Agentic E-Commerce Product Intelligence & Recommendation System
 
 Python · LangChain · LangGraph · RAG · MCP · AstraDB · FastAPI · AWS EKS · Kubernetes · Docker · GitHub Actions
 
-Engineered an end-to-end agentic product intelligence system that ingests e-commerce product data through an ETL pipeline, indexes product information and reviews in AstraDB, and delivers context-aware product discovery and recommendations through a retrieval-augmented generation (RAG) architecture.
-Built a LangGraph-based agentic RAG workflow with conditional retrieval, relevance grading, query rewriting, and response generation, enabling the system to iteratively refine user queries when retrieved product context is insufficient.
-Optimized retrieval using AstraDB vector search, MMR-based diversification, and contextual compression, combining semantic retrieval with LLM-driven filtering to provide focused product context to the generation pipeline.
-Implemented Model Context Protocol (MCP) tool integration to expose product retrieval and web-search capabilities to the agent, enabling tool-based orchestration between the product knowledge base and external information sources.
-Productionized the application on AWS EKS using Docker, Amazon ECR, Kubernetes deployments, LoadBalancer services, CloudFormation-based infrastructure, Kubernetes Secrets, and GitHub Actions CI/CD with automated image publishing and rollout verification.
-Integrated RAGAS evaluation workflows for measuring retrieval context precision and response relevancy, establishing an evaluation layer for monitoring RAG quality.
+* Engineered an end-to-end agentic product intelligence system that ingests e-commerce product data through an ETL pipeline, indexes product information and reviews in AstraDB, and delivers context-aware product discovery and recommendations through a retrieval-augmented generation (RAG) architecture.
+* Built a LangGraph-based agentic RAG workflow with conditional retrieval, relevance grading, query rewriting, and response generation, enabling the system to iteratively refine user queries when retrieved product context is insufficient.
+* Optimized retrieval using AstraDB vector search, MMR-based diversification, and contextual compression, combining semantic retrieval with LLM-driven filtering to provide focused product context to the generation pipeline.
+* Implemented Model Context Protocol (MCP) tool integration to expose product retrieval and web-search capabilities to the agent, enabling tool-based orchestration between the product knowledge base and external information sources.
+* Productionized the application on AWS EKS using Docker, Amazon ECR, Kubernetes deployments, LoadBalancer services, CloudFormation-based infrastructure, Kubernetes Secrets, and GitHub Actions CI/CD with automated image publishing and rollout verification.
+* Integrated RAGAS evaluation workflows for measuring retrieval context precision and response relevancy, establishing an evaluation layer for monitoring RAG quality.
 ------------------------------------------------------
 Data Engineering
 → scraping → ETL → structured product/review data
