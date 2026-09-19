@@ -30,7 +30,13 @@ git push
 install the setup .py
 
 pip install -e .
+-------------------------------------------------------------------------------------------------------------------------------
+| Project                                                | Primary technical identity                                                                      |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| **Project 1 — Document Intelligence Platform**         | RAG · Document AI · LLM structured outputs · FastAPI · AWS ECS                                  |
+| **Project 2 — E-Commerce Product Intelligence System** | **Agentic RAG · LangGraph · MCP · Retrieval Optimization · RAGAS · AWS EKS/Kubernetes · CI/CD** |
 
+------------------------------------------------------------------------------------------------------------------
 
 
 
