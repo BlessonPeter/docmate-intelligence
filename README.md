@@ -38,7 +38,7 @@ pip install -e .
 | **2. E-Commerce Assistant**  | Agentic RAG · LangGraph · MCP · Retrieval Optimization · RAGAS . EKS/Kubernetes                                |
 | **3. Research Generator**    | Multi-Agent AI · Human-in-the-Loop · Web Grounding · Azure                    |
 | **4. Semantic Image Search** | **Multimodal AI · CLIP · Vector Search · Qdrant · LLM Query Rewriting · AWS** |
-
+| **5. Fine-Tuning on AWS** | **LLM Fine-Tuning · QLoRA · PEFT · SageMaker · Model Serving · RAG** |
 
 
 Project 1 — FINAL RESUME VERSION
@@ -46,11 +46,12 @@ Document Intelligence & Conversational RAG Platform
 
 Python · LangChain · RAG · FAISS · FastAPI · Groq · PyMuPDF · Docker · AWS ECS Fargate
 
-Engineered an end-to-end LLM-powered document intelligence platform supporting automated document analysis, page-level document comparison, and multi-document conversational Q&A through modular FastAPI services.
-Built a conversational RAG pipeline using LangChain LCEL and FAISS, implementing recursive text chunking, embedding-based similarity retrieval, configurable top-k search, and contextual question reformulation to support context-aware document conversations.
-Implemented session-isolated, incremental vector indexing with persisted FAISS stores and document fingerprinting, enabling dynamic document ingestion while avoiding redundant indexing of previously processed content.
-Developed structured LLM workflows for document metadata extraction and page-wise document comparison, using Pydantic schemas and JSON parsing to transform unstructured document content into structured, machine-readable outputs.
-Deployed the containerized AI application on AWS ECS Fargate, integrating Amazon ECR, VPC networking, IAM, AWS Secrets Manager, CloudWatch logging, and CloudFormation-based infrastructure provisioning.
+* Engineered an end-to-end LLM-powered document intelligence platform supporting automated document analysis, page-level document comparison, and multi-document conversational Q&A through modular FastAPI services.
+* Built a conversational RAG pipeline using LangChain LCEL and FAISS, implementing recursive text chunking, embedding-based similarity retrieval, configurable top-k search, and contextual question reformulation to support context-aware document conversations.
+* Implemented session-isolated, incremental vector indexing with persisted FAISS stores and document fingerprinting, enabling dynamic document ingestion while avoiding redundant indexing of previously processed content.
+* Developed structured LLM workflows for document metadata extraction and page-wise document comparison, using Pydantic schemas and JSON parsing to transform unstructured document content into structured, machine-readable outputs.
+* Deployed the containerized AI application on AWS ECS Fargate, integrating Amazon ECR, VPC networking, IAM, AWS Secrets Manager, CloudWatch logging, and CloudFormation-based infrastructure provisioning.
+  
 | Dimension                      | Evidence in your project                                                         |
 | ------------------------------ | -------------------------------------------------------------------------------- |
 | **GenAI**                      | LLM workflows, structured generation, prompt architecture                        |
@@ -196,3 +197,42 @@ project 4
 | **Scalability Foundation**   | Batch indexing architecture · persistent vector storage · configurable retrieval parameters           |
 
 -----------------------------------------------------------------------------------------------------------
+project 5
+
+### Domain-Specific LLM Fine-Tuning & Cloud Inference Pipeline
+
+*Python · Hugging Face Transformers · TinyLlama 1.1B · QLoRA · PEFT · AWS SageMaker · S3 · API Gateway · Lambda · DynamoDB · Streamlit*
+
+* **Fine-tuned the TinyLlama 1.1B causal language model for domain-specific pharmaceutical instruction following using 4-bit QLoRA/LoRA**, implementing parameter-efficient adaptation with targeted attention-layer updates while minimizing trainable parameters and GPU memory requirements.
+
+* **Built the complete supervised fine-tuning pipeline**, transforming instruction/input/response data into tokenized causal-LM training sequences and configuring Hugging Face Trainer with gradient accumulation, evaluation strategy, checkpointing, and reproducible training parameters.
+
+* **Provisioned and executed GPU-based model training on Amazon SageMaker**, managing Hugging Face training jobs, model artifacts, S3 output storage, and cloud-based compute for the fine-tuning lifecycle.
+
+* **Deployed the fine-tuned model as a managed SageMaker inference endpoint** with a custom Hugging Face inference handler, then exposed model predictions through an **API Gateway → AWS Lambda → SageMaker** serverless inference architecture.
+
+* **Implemented inference observability with DynamoDB-backed request/response logging** and built a Streamlit client for interactive model inference, error handling, timeout management, and API response visualization.
+
+* **Extended the fine-tuned model with a lightweight RAG inference workflow**, retrieving relevant domain context before generation to augment the model's responses to technical pharmaceutical queries.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+| Dimension                           | Evidence in your project                                                                                         |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **LLM Fine-Tuning**                 | TinyLlama 1.1B · supervised instruction tuning · causal language modeling                                        |
+| **Parameter-Efficient Fine-Tuning** | **QLoRA · LoRA · PEFT · 4-bit quantization**                                                                     |
+| **Model Optimization**              | Quantized model loading · targeted LoRA adaptation · reduced trainable parameter footprint                       |
+| **Training Engineering**            | Hugging Face Trainer · tokenization · gradient accumulation · checkpointing · configurable training parameters   |
+| **Dataset Engineering**             | Instruction/input/response formatting · tokenization · sequence truncation/padding                               |
+| **GPU / Cloud Training**            | **Amazon SageMaker GPU training jobs · `ml.g5.xlarge`**                                                          |
+| **Model Lifecycle / MLOps**         | Training → checkpoint/artifact generation → S3 → model deployment → endpoint inference                           |
+| **Model Registry / Artifacts**      | S3-based model artifact storage and deployment workflow                                                          |
+| **Model Serving**                   | SageMaker Hugging Face endpoint · custom inference handler                                                       |
+| **Serverless AI Architecture**      | **API Gateway → Lambda → SageMaker Endpoint**                                                                    |
+| **Inference Engineering**           | Generation parameters · request validation · error handling · timeout handling                                   |
+| **AI + RAG**                        | Lightweight retrieval-augmented inference layered on top of the fine-tuned model                                 |
+| **Observability**                   | DynamoDB inference logging · request IDs · timestamps · prompt/response persistence                              |
+| **Frontend / Demo**                 | Streamlit interactive inference application                                                                      |
+| **AWS Engineering**                 | SageMaker · S3 · Lambda · API Gateway · DynamoDB · IAM                                                           |
+| **GenAI Engineering**               | Domain adaptation · instruction following · controlled text generation                                           |
+| **End-to-End ML Lifecycle**         | Data preparation → fine-tuning → cloud training → artifact management → deployment → API inference → application |
