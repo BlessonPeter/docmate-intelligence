@@ -62,6 +62,7 @@ Python · LangChain · RAG · FAISS · FastAPI · Groq · PyMuPDF · Docker · A
 
 
 “giving life to documents so users can communicate with them instead of manually searching through topics”—is excellent as a project narrative,
+-----------------------------------------------------------------------------------------------------------------------
 
  Project 2 — Final Resume Version
 Agentic E-Commerce Product Intelligence & Recommendation System
@@ -74,7 +75,7 @@ Python · LangChain · LangGraph · RAG · MCP · AstraDB · FastAPI · AWS EKS 
 * Implemented Model Context Protocol (MCP) tool integration to expose product retrieval and web-search capabilities to the agent, enabling tool-based orchestration between the product knowledge base and external information sources.
 * Productionized the application on AWS EKS using Docker, Amazon ECR, Kubernetes deployments, LoadBalancer services, CloudFormation-based infrastructure, Kubernetes Secrets, and GitHub Actions CI/CD with automated image publishing and rollout verification.
 * Integrated RAGAS evaluation workflows for measuring retrieval context precision and response relevancy, establishing an evaluation layer for monitoring RAG quality.
-------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 Data Engineering
 → scraping → ETL → structured product/review data
 
@@ -98,6 +99,7 @@ MLOps / DevOps
 
 Cloud
 → AWS infrastructure → CloudFormation → EKS
+
 Evaluation
 → RAGAS → context precision → response relevancy
 
