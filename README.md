@@ -98,10 +98,12 @@ MLOps / DevOps
 
 Cloud
 → AWS infrastructure → CloudFormation → EKS
-
 Evaluation
 → RAGAS → context precision → response relevancy
------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
 | Dimension                            | Evidence in your project                                                                                                                     |
 | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | **GenAI / LLM Engineering**          | Multi-provider LLM architecture · OpenAI/Gemini/Groq integrations · Prompt engineering · Context-aware generation                            |
