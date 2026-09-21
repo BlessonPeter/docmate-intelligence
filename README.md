@@ -157,3 +157,42 @@ Project 3 — Final Resume Version
 | **Cloud / Deployment**           | Azure Container Apps · Azure Container Registry · external ingress · configurable replicas                |
 | **Security / Configuration**     | Environment-based secrets · Azure/Jenkins credentials · externalized API configuration                    |
 | **Reliability / Operations**     | Health endpoint · deployment verification · structured logging · exception handling                       |
+--------------------------------------------------------------------------------------------------------------------------
+project 4
+### Multimodal Semantic Image Search & Retrieval System
+
+*Python · OpenCLIP/CLIP · Qdrant · OpenAI · FastAPI · Streamlit · Docker · AWS*
+
+* **Engineered a multimodal semantic image retrieval system** supporting natural-language-to-image and image-to-image search by mapping text and visual inputs into a shared CLIP embedding space and retrieving semantically similar images from Qdrant.
+
+* **Built an end-to-end vector search pipeline with OpenCLIP and Qdrant**, implementing image/text embedding generation, cosine-similarity retrieval, Top-K ranking, metadata filtering, persistent vector storage, and batch image indexing.
+
+* **Implemented LLM-powered query translation with OpenAI**, transforming conversational or ambiguous user queries into concise, image-oriented descriptions optimized for CLIP-based semantic retrieval.
+
+* **Developed both REST and interactive interfaces** using FastAPI and Streamlit, supporting image ingestion, folder-based batch indexing, text search, image-upload search, configurable Top-K retrieval, and similarity-score visualization.
+
+* **Optimized the application architecture for repeated inference and retrieval workloads** through reusable embedding/model components, lazy initialization, structured logging, environment-based configuration, and centralized exception handling.
+
+* **Containerized and deployed the multimodal search application on AWS**, integrating the computer-vision retrieval pipeline, FastAPI backend, Qdrant vector database, and interactive search interface into a cloud-hosted application.
+
+
+| Dimension                    | Evidence in your project                                                                              |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Multimodal AI**            | Shared text/image embedding space · text-to-image retrieval · image-to-image retrieval                |
+| **Computer Vision**          | OpenCLIP/CLIP · image embeddings · visual semantic similarity                                         |
+| **Embedding Engineering**    | Text embeddings · image embeddings · normalized vector representations                                |
+| **Semantic Search**          | Natural-language search → embedding → vector similarity → ranked image results                        |
+| **Vector Database**          | **Qdrant** · cosine similarity · persistent vectors · collection management                           |
+| **Retrieval Engineering**    | Top-K retrieval · similarity scoring · metadata/category filtering                                    |
+| **LLM Engineering**          | **OpenAI query translation** · conversational query rewriting · CLIP-oriented prompt construction     |
+| **Data / Indexing Pipeline** | Image ingestion · folder-based batch indexing · batch embedding generation · metadata extraction      |
+| **Backend Engineering**      | **FastAPI** · REST endpoints · image upload handling · search APIs                                    |
+| **Frontend / Application**   | **Streamlit** · interactive text search · image upload search · Top-K controls · result visualization |
+| **ML Architecture**          | Separation of embedding, ingestion, retrieval, query translation, and API layers                      |
+| **Production Engineering**   | Lazy model initialization · reusable components · structured logging · centralized exception handling |
+| **Containerization**         | Docker · containerized backend/application deployment                                                 |
+| **Cloud / Deployment**       | **AWS** · cloud deployment of multimodal retrieval application                                        |
+| **Configuration / Security** | Environment-based configuration · externalized API credentials                                        |
+| **Scalability Foundation**   | Batch indexing architecture · persistent vector storage · configurable retrieval parameters           |
+
+-----------------------------------------------------------------------------------------------------------
