@@ -116,3 +116,43 @@ Evaluation
 | **CI/CD / DevOps**                   | GitHub Actions · automated Docker builds · ECR image publishing · Kubernetes deployment updates · rollout verification                       |
 | **Security / Configuration**         | GitHub Secrets · Kubernetes Secrets · AWS IAM · externalized API credentials · environment-based configuration                               |
 | **Scalable Architecture**            | Stateless containerized application · Kubernetes replica deployment · configurable EKS node-group scaling · decoupled vector database        |
+
+-------------------------------------------------------------------------------------------------------------------------------
+Project 3 — Final Resume Version
+### Multi-Agent Autonomous Research & Report Generation System
+
+*Python · LangGraph · OpenAI GPT-OSS-120B · Tavily · Wikipedia API · FastAPI · Pydantic · Docker · Azure Container Apps · Jenkins*
+
+* **Engineered an end-to-end multi-agent research system** that dynamically generates specialized analyst personas, conducts independent web-grounded research, and synthesizes multiple perspectives into structured, downloadable research reports.
+
+* **Orchestrated stateful multi-agent workflows with LangGraph**, using parallel analyst dispatch, structured agent states, conditional workflow transitions, and persistent thread-based execution to coordinate independent research perspectives before final synthesis.
+
+* **Implemented human-in-the-loop agent execution** with interruptible LangGraph workflows, enabling users to review generated analyst perspectives, submit feedback, update workflow state, and resume report generation without restarting the pipeline.
+
+* **Built a multi-source web-grounded research pipeline using Tavily Search and the Wikipedia API**, dynamically generating research queries from analyst conversations and incorporating retrieved source context into analyst-specific research and report synthesis.
+
+* **Developed automated DOCX/PDF report generation** that assembles synthesized research, introductions, conclusions, and source references into downloadable artifacts through a FastAPI backend.
+
+* **Productionized the multi-agent application on Azure Container Apps**, containerizing the system with Docker and implementing Jenkins CI/CD automation for Azure Container Registry image publishing, deployment, secret configuration, replica management, and post-deployment health verification.
+
+
+| Dimension                        | Evidence in your project                                                                                  |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| **Multi-Agent AI**               | Dynamic analyst personas · specialized research agents · independent perspectives · multi-agent synthesis |
+| **Agentic AI**                   | LangGraph StateGraph · conditional workflows · agent dispatch · iterative research workflow               |
+| **Parallel Agent Orchestration** | LangGraph `Send` dispatch for independent analyst research                                                |
+| **LLM Engineering**              | OpenAI GPT-OSS-120B · structured outputs · prompt architecture · configurable model providers             |
+| **Web-Grounded AI**              | **Tavily Search + Wikipedia API** · dynamically generated search queries · source-aware research context  |
+| **External Tool Integration**    | Multiple knowledge-source integrations · external API consumption · retrieval/tool orchestration          |
+| **Human-in-the-Loop**            | Workflow interruption · analyst review · feedback submission · state modification · workflow resumption   |
+| **Stateful AI Systems**          | LangGraph state management · MemorySaver · thread IDs · resumable execution                               |
+| **Structured Generation**        | Pydantic schemas · structured LLM outputs · typed analyst/search objects                                  |
+| **AI Research & Synthesis**      | Independent research perspectives → analyst sections → synthesized report                                 |
+| **Document Generation**          | Automated DOCX/PDF generation · source/reference compilation                                              |
+| **Backend Engineering**          | FastAPI · REST APIs · authentication · report generation/status/download                                  |
+| **Data Persistence**             | SQLAlchemy · SQLite · user/session persistence                                                            |
+| **Containerization**             | Docker · multi-stage builds · Uvicorn · health checks                                                     |
+| **CI/CD**                        | Jenkins · automated image/deployment workflow · rollout verification                                      |
+| **Cloud / Deployment**           | Azure Container Apps · Azure Container Registry · external ingress · configurable replicas                |
+| **Security / Configuration**     | Environment-based secrets · Azure/Jenkins credentials · externalized API configuration                    |
+| **Reliability / Operations**     | Health endpoint · deployment verification · structured logging · exception handling                       |
